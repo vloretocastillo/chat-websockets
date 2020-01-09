@@ -30,3 +30,52 @@ h1 {
     -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
 }
+
+.main {
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form {
+    border: 1px solid blue;
+    width: 50%;
+}
+
+.display-container {
+    border: 1px solid red;
+    min-height: 20vh;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid purple;
+    box-shadow: 0 0 10px rgb(18, 18, 19);
+}
+
+.input-container {
+    border: 1px solid red;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* height: 1rem; */
+}
+
+.input-container .message {
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    
+}
+
+.input-container .button {
+    width: 15%;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    /* height: 100%; */
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
