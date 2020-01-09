@@ -11,6 +11,10 @@ io.on('connection', (socket)=> {
 })
 
 // static files
+            // What we would do if we put the client folder inside another folder, for instance
+            // const path = require('path')
+            // path.join(__dirname, 'client') 
+            // app.use(express.static(path.join(__dirname, 'client'))) OR app.use(express.static(__dirname + 'src/client'))
 app.use(express.static('client'))
 
 // Starting the server
