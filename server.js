@@ -5,14 +5,14 @@ const app = express()
 const server = http.createServer(app)
 const io = require('socket.io').listen(server)
 
-// use websockets
-// io.on('connection', (socket)=> {
-//     console.log('client on connection')
-// })
-
+// use websockets 
+            // ---> MOVED TO sockets/sockets.js 
+            // io.on('connection', (socket)=> {
+            //     console.log('client on connection')
+            // })
 require('./sockets/sockets')(io)
 
-// static files
+// serve static files or folder
             // What we would do if we put the client folder inside another folder, for instance
             // const path = require('path')
             // path.join(__dirname, 'client') 
