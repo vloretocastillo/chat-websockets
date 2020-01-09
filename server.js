@@ -6,9 +6,11 @@ const server = http.createServer(app)
 const io = require('socket.io').listen(server)
 
 // use websockets
-io.on('connection', (socket)=> {
-    console.log('client on connection')
-})
+// io.on('connection', (socket)=> {
+//     console.log('client on connection')
+// })
+
+require('./sockets/sockets')(io)
 
 // static files
             // What we would do if we put the client folder inside another folder, for instance
