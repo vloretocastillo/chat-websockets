@@ -33,34 +33,39 @@ h1 {
 
 .main {
     display: flex;
-    min-height: 80vh;
+    min-height: 85vh;
     justify-content: center;
     align-items: center;
 
 }
 
 .form {
-    border: 1px solid blue;
-    width: 50%;
+    /* border: 1px solid blue;
+    padding: 5%; */
+    width: 40%;
 }
 
 .display-container {
-    border: 1px solid red;
-    min-height: 20vh;
+    /* border: 1px solid red; */
+    min-height: 30vh;
+    /* border: 1px solid blue; */
+    padding: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    overflow: hidden;
 }
 
 input:focus {
     outline: none !important;
-    border:1px solid purple;
+    /* border:1px solid purple; */
+    border: none;
     box-shadow: 0 0 10px rgb(18, 18, 19);
 }
 
 .input-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
-    /* height: 1rem; */
 }
 
 .input-container .message {
@@ -74,8 +79,8 @@ input:focus {
     width: 15%;
     background-color: rgb(5, 5, 5);
     color: white;
-    /* height: 100%; */
     border: none;
     font-size: 1.2rem;
     padding: 0.5rem;
+    border-radius: 5px;
 }
