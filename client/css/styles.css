@@ -33,7 +33,7 @@ h1 {
 
 .main {
     display: flex;
-    min-height: 85vh;
+    min-height: 90vh;
     justify-content: center;
     align-items: center;
 
@@ -47,12 +47,13 @@ h1 {
 
 .display-container {
     /* border: 1px solid red; */
-    min-height: 30vh;
+    height: 40vh;
     /* border: 1px solid blue; */
     padding: 5%;
     margin-bottom: 5%;
     background-color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: scroll;
 }
 
 input:focus {
